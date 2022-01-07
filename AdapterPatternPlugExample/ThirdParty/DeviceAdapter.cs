@@ -19,5 +19,11 @@ namespace AdapterPatternPlugExample
             device.ConnectVia = ConnectVia.ViaAdapter;
             return device;
         }
+        public override void MyProperties()
+        {
+            Console.WriteLine("Name: Adapter1002");
+            Console.WriteLine("Company: Kingston");
+        }
+
     }
 }

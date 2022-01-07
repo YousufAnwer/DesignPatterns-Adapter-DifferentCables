@@ -19,7 +19,7 @@ namespace AdapterPatternPlugExample
             Device Keyboard = DeviceFactory.Create("Keyoard", USB_A);
             Device Mouse = DeviceFactory.Create("Mouse", USB_A);
 
-            Computer CoreI5 = new Computer();
+            IConnecterService CoreI5 = new Computer();
             IConnecterService adapter = new DeviceAdapter();
 
 
@@ -34,6 +34,7 @@ namespace AdapterPatternPlugExample
             Console.WriteLine("==========================");
 
             CoreI5.MyProperties();
+            adapter.MyProperties();
 
 
         }

@@ -32,7 +32,7 @@ namespace AdapterPatternPlugExample
                 Console.WriteLine("Not Supported");
             }
         }
-        public void MyProperties()
+        public virtual void MyProperties()
         {
             Console.WriteLine("System Details");
             Console.WriteLine("\tPort Support: " + _port.ToString());

@@ -7,5 +7,6 @@ namespace AdapterPatternPlugExample
     public interface IConnecterService
     {
         void ConnectDevice(Device device);
+        void MyProperties();
     }
 }
